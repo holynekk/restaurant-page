@@ -1,4 +1,6 @@
 function createHeader(id, txt){
+    const image = document.createElement('img');
+
     const head = document.createElement('header');
     head.setAttribute('id', id);
 
@@ -26,9 +28,9 @@ function createNav(id){
     const nav = document.createElement('nav');
     nav.setAttribute('id', id);
 
-    const homeBt = createButton("home", "home");
-    const menuBt = createButton("menu", "menu");
-    const contactBt = createButton("contact", "contact");
+    const homeBt = createButton("home", "HOME");
+    const menuBt = createButton("menu", "MENU");
+    const contactBt = createButton("contact", "CONTACT");
 
     nav.appendChild(homeBt);
     nav.appendChild(menuBt);
@@ -45,17 +47,31 @@ function createTab(id){
     return shownTab;
 }
 
+function createFooter(id, txt){
+    const foot = document.createElement('footer');
+    foot.setAttribute('id', id);
+
+    const text = document.createElement('h3');
+    text.textContent = txt;
+
+    foot.appendChild(text);
+    return foot;
+}
+
 function loadInitial(){
     const divSection = document.getElementById('content');
 
-    const header = createHeader('just-header', "Zıkkım Restaurant")
+    const header = createHeader('just-header', "ZIKKIM RESTAURANT")
     divSection.appendChild(header);
 
     const navBar = createNav('navbar');
-    divSection.appendChild(navBar); 
+    header.appendChild(navBar); 
 
     const tabContent = createTab("tab-content");
     divSection.appendChild(tabContent);
+
+    const foot = createFooter("footer", "Made by HolyNekK :)");
+    divSection.appendChild(foot);
 }
 
 export default loadInitial;

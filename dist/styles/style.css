@@ -11,6 +11,11 @@ body{
     background-color: white;
 }
 
+/* ------------------------- */
+p{
+    color: white;
+}
+/* ------------------------- */
 
 #content{
     display: flex;
@@ -22,13 +27,129 @@ body{
     height: 140px;
     background-color: rgba(0,0,0,0.8);
     color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #just-header h1{
-    text-align: center;
     line-height: 5rem;
-    font-family: monospace;
+    font-family: 'Monoton', cursive;
     font-weight: bolder;
     letter-spacing: 0.7rem;
     font-size: 3rem;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 80px;
+}
+
+.tab{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 70px;
+}
+
+.tab:hover{
+    background-color: rgba(255,255,255,0.5);
+    transition-duration: 0.3s;
+}
+
+.tab span{
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.active{
+    background-color: rgba(255,255,255,0.5);
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    text-shadow: 0px 4px 20px rgb(80, 16, 16);
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    font-family: 'Bangers', cursive;
+    margin-top: 10%;
+    font-size: 5rem;
+    text-shadow: 2px 2px #fff;
+}
+
+#tab-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-bar{
+    width: 900px;
+    background-color: yellow;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.menu-text{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+#card{
+    width: 400px;
+    background-color: rgba(0,0,0,0.8);
+    margin: 25px;
+    border-radius: 15px;
+    display: flex;
+    color: white;
+}
+
+#menu-image{
+    height: 64px;
+    width: 32px;
+}
+
+#order-button{
+    height: 60px;
+    width: 120px;
+    background-color: rgba(0,0,0,0.9);
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.contact-card{
+    width: 900px;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.7);
 }

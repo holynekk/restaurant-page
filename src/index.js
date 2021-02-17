@@ -8,7 +8,7 @@ setup();
 function addFunctionToButtons(){
     const home = document.getElementById("home");
     const menu = document.getElementById("menu");
-    const contact = document.getElementById("contanct");
+    const contact = document.getElementById("contact");
 
     home.addEventListener("click", loadHome);
     menu.addEventListener("click", loadMenu);
